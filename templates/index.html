@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beroemdheden Herkenner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered">Beroemdheden Herkenner</h1>
+            <form action="/" method="post" enctype="multipart/form-data">
+                <div class="file is-centered is-boxed has-name">
+                    <label class="file-label">
+                        <input class="file-input" type="file" name="file" accept="image/*" required>
+                        <span class="file-cta">
+                            <span class="file-icon">
+                                <i class="fas fa-upload"></i>
+                            </span>
+                            <span class="file-label">Kies een afbeelding...</span>
+                        </span>
+                    </label>
+                </div>
+                <div class="has-text-centered mt-5">
+                    <button type="submit" class="button is-primary">Herken Persoon</button>
+                </div>
+            </form>
+            {% if description %}
+            <div class="box mt-5">
+                <h2 class="subtitle">Output Descriptie:</h2>
+                <textarea class="textarea" readonly>{{ description }}</textarea>
+                <figure class="image mt-3">
+                    <img src="{{ image_path }}" alt="Uploaded Image" style="max-width: 100%;">
+                </figure>
+                <a href="/clear" class="button is-danger mt-3">Verwijder</a>
+            </div>
+            {% endif %}
+        </div>
+    </section>
+</body>
+</html>
