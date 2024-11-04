@@ -4,6 +4,8 @@ transformers
 Pillow           
 scikit-learn     
 flask
-face_recognition
-dlib==19.24.6
+deepface
 pandas
+fastparquet
+tensorflow
+tf-keras
