@@ -28,10 +28,12 @@
             </form>
             {% if description %}
             <div class="box mt-5">
-                <h2 class="subtitle">Output Descriptie:</h2>
+                <h2 class="subtitle">Gegenereerde Descriptie:</h2>
                 <textarea class="textarea" readonly>{{ description }}</textarea>
+                <h2 class="subtitle">Biography:</h2>
+                <p>{{ biography }}</p>
                 <figure class="image mt-3">
-                    <img src="{{ image_path }}" alt="Uploaded Image" style="max-width: 100%;">
+                    <img src="{{ image_path }}" alt="Recognized Image">
                 </figure>
                 <a href="/clear" class="button is-danger mt-3">Verwijder</a>
             </div>

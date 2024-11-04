@@ -1,7 +1,9 @@
-torch            # Of de nieuwste versie compatibel met je hardware
-torchvision      # Compatibel met de versie van torch
-transformers     # Hugging Face Transformers-bibliotheek voor GPT-2
-Pillow           # Voor het laden en verwerken van afbeeldingen
-scikit-learn     # Voor het trainen van de classificatiemodel
+torch            
+torchvision      
+transformers     
+Pillow           
+scikit-learn     
 flask
 face_recognition
+dlib==19.24.6
+pandas
