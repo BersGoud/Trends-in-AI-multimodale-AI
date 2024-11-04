@@ -1,11 +1,7 @@
-torch            
-torchvision      
-transformers     
-Pillow           
-scikit-learn     
-flask
-deepface
-pandas
-fastparquet
+Flask
+transformers
+torch
+numpy
 tensorflow
-tf-keras
+Pillow
+keras
