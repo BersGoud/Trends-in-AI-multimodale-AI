@@ -14,4 +14,4 @@ tensorflow
 ## sudo apt-get install libgl1-mesa-glx
 ## Download dataset
 Download de dataset en plaatst dit bij het project directory
-[dataset](https://www.kaggle.com/datasets/hereisburak/pins-face-recognition)
+- [dataset](https://www.kaggle.com/datasets/hereisburak/pins-face-recognition)
